@@ -1,0 +1,183 @@
+.hero {
+  background: url('../images/backgrounds/about-bg.png') center / contain;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 50%;
+  margin: auto;
+}
+
+h1 {
+  font-size: var(--head1);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--orange);
+}
+
+.contact {
+  color: rgb(138, 136, 136);
+}
+
+.line {
+  width: 40px;
+  height: 2px;
+  background-color: var(--orange);
+}
+
+.box {
+  text-align: center;
+  padding: 30px 40px;
+  border: 1.5px solid var(--gray);
+  background-color: var(--white);
+  color: rgb(138, 136, 136);
+  margin: 10px 0;
+  max-width: 100%;
+}
+
+.inner a {
+  color: var(--lightGray);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.creative {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 60px;
+}
+
+.creative h3 {
+  color: var(--black);
+  font-size: var(--head3);
+  text-align: center;
+}
+
+.holder {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.holder p {
+  color: rgb(138, 136, 136);
+  max-width: 620px;
+}
+
+.logo-box {
+  padding: 40px 60px;
+  border: 1px solid var(--gray);
+  width: 50%;
+}
+
+.logo-box img {
+  max-width: 70%;
+  object-fit: contain;
+}
+
+.prev {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  border: 1px solid black;
+  min-height: 70vh;
+  padding: 80px;
+}
+
+article {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+article div {
+  padding: 60px;
+  background: url('../images/about/about_2013.png') center / cover no-repeat;
+  width: 50%;
+  height: 300px;
+}
+
+.bg-2011 {
+  background: url('../images/about/about_2011.png') center / cover no-repeat;
+}
+
+.prev p {
+  color: rgb(138, 136, 136);
+  text-align: center;
+}
+
+.about-footer {
+  background-color: var(--black);
+  color: var(--gray);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .inner {
+    width: 100%;
+    text-align: center;
+  }
+
+  .box {
+    padding: 24px;
+  }
+
+  .logo-box {
+    padding: 30px 24px;
+    width: 100%;
+  }
+
+  .logo-box img {
+    width: 100px;
+    max-width: none;
+    text-align: center;
+  }
+
+  .creative {
+    padding: 24px;
+  }
+
+  .prev {
+    padding: 24px;
+  }
+
+  article {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  article div {
+    width: 100%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
