@@ -3,6 +3,7 @@ const burger = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const closeMenu = document.querySelector('.close');
 const links = document.querySelectorAll('a');
+const url = window.location.href;
 const data = [
   {
     name: 'Ali Morshedlou',
@@ -54,25 +55,26 @@ const data = [
 ];
 
 let htmlContent = ``;
+
 data.forEach((item) => {
-  htmlContent += `<li class="speaker">
-    <div class="img-holder">
+  htmlContent += `<li class='speaker'>
+    <div class='img-holder'>
     <img
-    class="cheese"
+    class='cheese'
     src="./images/home/empty-chessboard-svgrepo-com.svg"
-    alt=""
+    alt=''
   />
     <img
-      class="speaker-img"
+      class='speaker-img'
       src=${item.imgSrc}
-      alt=""
+      alt=''
     />
   </div>
-  <div class="speaker-info">
-    <h4 class="speaker-name">${item.name}</h4>
-    <p class="job-title">${item.jobTitle}</p>
-    <div class="line"></div>
-    <p class="about">
+  <div class='speaker-info'>
+    <h4 class='speaker-name'>${item.name}</h4>
+    <p class='job-title'>${item.jobTitle}</p>
+    <div class='line'></div>
+    <p class='about'>
      ${item.about}
     </p>
   </div>
@@ -81,15 +83,18 @@ data.forEach((item) => {
   featureSection.innerHTML = htmlContent;
 });
 
-burger.addEventListener('click', function () {
+const handelBurger = () => {
   mobileMenu.classList.toggle('active');
-});
+};
 
-closeMenu.addEventListener('click', function () {
+const handelCloseMenu = () => {
   mobileMenu.classList.toggle('active');
-});
+};
 
-let url = window.location.href;
+burger.addEventListener('click', handelBurger);
+
+closeMenu.addEventListener('click', handelCloseMenu);
+
 links.forEach((link) => {
   if (link.href === url) link.id = 'active-link';
 });

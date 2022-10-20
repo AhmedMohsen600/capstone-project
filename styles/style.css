@@ -30,6 +30,10 @@ body {
   display: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .desktop nav li a {
   color: var(--black);
 }
@@ -39,7 +43,7 @@ header {
   background: var(--white);
   min-height: 15vh;
   flex-direction: column;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
   position: relative;
 }
 
@@ -73,8 +77,21 @@ header div ul {
   align-items: center;
 }
 
+footer div {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
 .sub-header div {
   flex: 3.5;
+}
+
+li {
+  list-style: none;
 }
 
 header div ul li {
@@ -88,17 +105,13 @@ header div ul li {
   color: var(--orange);
 }
 
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .logo {
   width: 100px;
   background-color: transparent;
+}
+
+footer div img {
+  width: 100px;
 }
 
 .logo img {
@@ -109,19 +122,6 @@ a {
 footer {
   display: flex;
   min-height: 25vh;
-}
-
-footer div {
-  display: flex;
-  width: 60%;
-  margin: auto;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-}
-
-footer div img {
-  width: 100px;
 }
 
 #active-link {
@@ -200,6 +200,7 @@ footer div img {
     height: 10px;
     cursor: pointer;
   }
+
   .mobile-menu ul li a {
     color: var(--white);
   }
