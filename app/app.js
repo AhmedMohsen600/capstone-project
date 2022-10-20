@@ -6,7 +6,7 @@ const links = document.querySelectorAll('a');
 const data = [
   {
     name: 'Ali Morshedlou',
-    imgSrc: '../images/speakers/ali-morshedlou.jpg',
+    imgSrc: './images/speakers/ali-morshedlou.jpg',
     jobTitle: 'BEng. Computer Science',
     about:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto praesentium commodi beatae',
@@ -14,7 +14,7 @@ const data = [
 
   {
     name: 'David Mumma',
-    imgSrc: '../images/speakers/david-mumma.jpg',
+    imgSrc: './images/speakers/david-mumma.jpg',
     jobTitle: 'BEng. Mechanical Engineering',
     about:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto praesentium commodi beatae',
@@ -22,7 +22,7 @@ const data = [
 
   {
     name: 'Gift Habeshaw',
-    imgSrc: '../images/speakers/gift-habeshaw.jpg',
+    imgSrc: './images/speakers/gift-habeshaw.jpg',
     jobTitle: 'BEng. Food Engineering',
     about:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto praesentium commodi beatae',
@@ -30,7 +30,7 @@ const data = [
 
   {
     name: 'Christina Wocinte',
-    imgSrc: '../images/speakers/christina-wocintechchat.jpg',
+    imgSrc: './images/speakers/christina-wocintechchat.jpg',
     jobTitle: 'BEng. Civil Engineering',
     about:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto praesentium commodi beatae',
@@ -38,7 +38,7 @@ const data = [
 
   {
     name: 'Elin Tabitha',
-    imgSrc: '../images/speakers/elin-tabitha.jpg',
+    imgSrc: './images/speakers/elin-tabitha.jpg',
     jobTitle: 'BEng. Industrial Chemistry',
     about:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto praesentium commodi beatae',
@@ -46,7 +46,7 @@ const data = [
 
   {
     name: 'Juan Enclada',
-    imgSrc: '../images/speakers/juan-encalada.jpg',
+    imgSrc: './images/speakers/juan-encalada.jpg',
     jobTitle: 'BEng. Electrical Engineering',
     about:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto praesentium commodi beatae',
@@ -59,7 +59,7 @@ data.forEach((item) => {
     <div class="img-holder">
     <img
     class="cheese"
-    src="../images/home/empty-chessboard-svgrepo-com.svg"
+    src="./images/home/empty-chessboard-svgrepo-com.svg"
     alt=""
   />
     <img
