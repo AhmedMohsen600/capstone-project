@@ -54,7 +54,7 @@ const data = [
   },
 ];
 
-let htmlContent = ``;
+let htmlContent = '';
 
 data.forEach((item) => {
   htmlContent += `<li class='speaker'>
