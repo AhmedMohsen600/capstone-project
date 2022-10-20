@@ -62,12 +62,12 @@ data.forEach((item) => {
     <img
     class='cheese'
     src="./images/home/empty-chessboard-svgrepo-com.svg"
-    alt=''
+    alt='cheese-bg'
   />
     <img
       class='speaker-img'
       src=${item.imgSrc}
-      alt=''
+      alt='speakers'
     />
   </div>
   <div class='speaker-info'>
